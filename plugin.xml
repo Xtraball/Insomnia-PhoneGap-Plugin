@@ -33,41 +33,16 @@
     <source-file src="src/ios/Insomnia.m"/>
   </platform>
 
-      <!-- wp8 -->
-    <platform name="wp8">
-        <config-file target="config.xml" parent="/*">
-            <feature name="Insomnia">
-                <param name="wp-package" value="Insomnia"/>
-            </feature>
-        </config-file>
-
-        <source-file src="src/wp8/Insomnia.cs" />
-    </platform>
-
   <!-- android -->
   <platform name="android">
 
-    <config-file target="res/xml/config.xml" parent="/*">
+    <config-file target="app/src/main/res/xml/config.xml" parent="/*">
       <feature name="Insomnia">
         <param name="android-package" value="nl.xservices.plugins.Insomnia" />
       </feature>
     </config-file>
 
-    <source-file src="src/android/nl/xservices/plugins/Insomnia.java" target-dir="src/nl/xservices/plugins"/>
+    <source-file src="src/android/nl/xservices/plugins/Insomnia.java" target-dir="app/src/main/java/nl/xservices/plugins"/>
   </platform>
-
-  <!-- firefoxos -->
-  <platform name="firefoxos">
-    <js-module src="src/firefoxos/insomnia.js" name="InsomniaProxy">
-      <runs />
-    </js-module>
-  </platform>
-  
-  <!-- windows -->
-  <platform name="windows">
-    <js-module src="src/windows/InsomniaProxy.js" name="InsomniaProxy">
-      <merges target="" />
-    </js-module>
-  </platform>  
 
 </plugin>
