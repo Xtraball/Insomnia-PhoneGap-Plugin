@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-insomnia",
+  "name": "Insomnia",
   "version": "4.3.0",
-  "description": "Prevent the screen of the mobile device from falling asleep.",
+  "description": "Cordova Insomnia",
   "cordova": {
-    "id": "cordova-plugin-insomnia",
+    "id": "Insomnia",
     "platforms": [
       "ios",
       "wp8",
